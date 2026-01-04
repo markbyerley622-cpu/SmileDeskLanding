@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333ea;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Icon -->
+  <g transform="translate(540, 200)">
+    <rect width="120" height="120" rx="24" fill="url(#iconGrad)"/>
+    <g transform="translate(60, 60) scale(3)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="m0 -9-1.912 5.813a2 2 0 0 1-1.275 1.275L-9 0l5.813 1.912a2 2 0 0 1 1.275 1.275L0 9l1.912-5.813a2 2 0 0 1 1.275-1.275L9 0l-5.813-1.912a2 2 0 0 1-1.275-1.275L0 -9Z"/>
+      <path d="M-7 -9v4"/>
+      <path d="M7 5v4"/>
+      <path d="M-9 -7h4"/>
+      <path d="M5 7h4"/>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <text x="600" y="400" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="56" font-weight="700" fill="white">SmileDesk</text>
+  <text x="600" y="460" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="24" fill="#9ca3af">Never Miss a Patient Call Again</text>
+</svg>

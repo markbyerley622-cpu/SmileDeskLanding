@@ -147,54 +147,54 @@ function HeroAnimation() {
         </div>
       </motion.div>
 
-      {/* Floating Notification Cards - Hidden on mobile, visible on sm+ */}
+      {/* Floating Notification Cards - Visible on all screens, optimized for mobile */}
       <motion.div
-        className="hidden sm:block absolute right-0 sm:-right-2 lg:-right-4 top-16 sm:top-20 glass-card p-2 sm:p-3 shadow-xl"
+        className="absolute -right-2 sm:-right-2 lg:-right-4 top-8 sm:top-20 glass-card p-1.5 sm:p-2 md:p-3 shadow-xl scale-75 sm:scale-90 md:scale-100 origin-top-right"
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1.5, duration: 0.4 }}
       >
-        <div className="flex items-center gap-2 sm:gap-3">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-accent-500/20 flex items-center justify-center">
-            <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-accent-400" />
+        <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3">
+          <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-lg bg-accent-500/20 flex items-center justify-center">
+            <MessageSquare className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-accent-400" />
           </div>
           <div>
-            <p className="text-dark-100 text-xs sm:text-sm font-medium">New Lead Captured</p>
-            <p className="text-dark-400 text-[10px] sm:text-xs">Sarah Johnson • Cleaning</p>
+            <p className="text-dark-100 text-[10px] sm:text-xs md:text-sm font-medium">New Lead Captured</p>
+            <p className="text-dark-400 text-[8px] sm:text-[10px] md:text-xs">Sarah Johnson • Cleaning</p>
           </div>
         </div>
       </motion.div>
 
       <motion.div
-        className="hidden sm:block absolute left-0 sm:-left-4 lg:-left-8 top-6 sm:top-8 glass-card p-2 sm:p-3 shadow-xl"
+        className="absolute -left-2 sm:-left-4 lg:-left-8 top-0 sm:top-8 glass-card p-1.5 sm:p-2 md:p-3 shadow-xl scale-75 sm:scale-90 md:scale-100 origin-top-left"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 2, duration: 0.4 }}
       >
-        <div className="flex items-center gap-2 sm:gap-3">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-success-500/20 flex items-center justify-center">
-            <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-success-400" />
+        <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3">
+          <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-lg bg-success-500/20 flex items-center justify-center">
+            <Calendar className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-success-400" />
           </div>
           <div>
-            <p className="text-dark-100 text-xs sm:text-sm font-medium">Appointment Booked</p>
-            <p className="text-dark-400 text-[10px] sm:text-xs">Tomorrow at 2:00 PM</p>
+            <p className="text-dark-100 text-[10px] sm:text-xs md:text-sm font-medium">Appointment Booked</p>
+            <p className="text-dark-400 text-[8px] sm:text-[10px] md:text-xs">Tomorrow at 2:00 PM</p>
           </div>
         </div>
       </motion.div>
 
       <motion.div
-        className="hidden sm:block absolute right-4 sm:right-6 lg:right-8 bottom-12 sm:bottom-16 glass-card p-2 sm:p-3 shadow-xl"
+        className="absolute right-0 sm:right-6 lg:right-8 bottom-4 sm:bottom-16 glass-card p-1.5 sm:p-2 md:p-3 shadow-xl scale-75 sm:scale-90 md:scale-100 origin-bottom-right"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2.5, duration: 0.4 }}
       >
-        <div className="flex items-center gap-2 sm:gap-3">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-purple-500/20 flex items-center justify-center">
-            <Bell className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400" />
+        <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3">
+          <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-lg bg-purple-500/20 flex items-center justify-center">
+            <Bell className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-purple-400" />
           </div>
           <div>
-            <p className="text-dark-100 text-xs sm:text-sm font-medium">SMS Sent to You</p>
-            <p className="text-dark-400 text-[10px] sm:text-xs">Patient details delivered</p>
+            <p className="text-dark-100 text-[10px] sm:text-xs md:text-sm font-medium">SMS Sent to You</p>
+            <p className="text-dark-400 text-[8px] sm:text-[10px] md:text-xs">Patient details delivered</p>
           </div>
         </div>
       </motion.div>
