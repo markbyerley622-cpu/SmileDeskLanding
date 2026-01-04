@@ -16,8 +16,8 @@ export default function HeroSection() {
       <div className="gradient-orb w-96 h-96 bg-accent-500/30 -top-48 -left-48" />
       <div className="gradient-orb w-96 h-96 bg-purple-500/20 -bottom-48 -right-48" style={{ animationDelay: '2s' }} />
 
-      <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="container-custom relative z-10 px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -82,7 +82,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative"
+            className="relative flex justify-center lg:justify-end"
           >
             <HeroAnimation />
           </motion.div>
@@ -94,10 +94,10 @@ export default function HeroSection() {
 
 function HeroAnimation() {
   return (
-    <div className="relative w-full max-w-lg mx-auto">
+    <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto px-4 sm:px-0">
       {/* Main Phone Mockup */}
       <motion.div
-        className="phone-mockup p-4 aspect-[9/16] max-h-[500px]"
+        className="phone-mockup p-3 sm:p-4 aspect-[9/16] max-h-[420px] sm:max-h-[500px] mx-auto"
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
       >
@@ -147,54 +147,54 @@ function HeroAnimation() {
         </div>
       </motion.div>
 
-      {/* Floating Notification Cards */}
+      {/* Floating Notification Cards - Hidden on mobile, visible on sm+ */}
       <motion.div
-        className="absolute -right-4 top-20 glass-card p-3 shadow-xl"
+        className="hidden sm:block absolute right-0 sm:-right-2 lg:-right-4 top-16 sm:top-20 glass-card p-2 sm:p-3 shadow-xl"
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 1.5, duration: 0.4 }}
       >
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-accent-500/20 flex items-center justify-center">
-            <MessageSquare className="w-5 h-5 text-accent-400" />
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-accent-500/20 flex items-center justify-center">
+            <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-accent-400" />
           </div>
           <div>
-            <p className="text-dark-100 text-sm font-medium">New Lead Captured</p>
-            <p className="text-dark-400 text-xs">Sarah Johnson • Cleaning</p>
+            <p className="text-dark-100 text-xs sm:text-sm font-medium">New Lead Captured</p>
+            <p className="text-dark-400 text-[10px] sm:text-xs">Sarah Johnson • Cleaning</p>
           </div>
         </div>
       </motion.div>
 
       <motion.div
-        className="absolute -left-8 top-8 glass-card p-3 shadow-xl"
+        className="hidden sm:block absolute left-0 sm:-left-4 lg:-left-8 top-6 sm:top-8 glass-card p-2 sm:p-3 shadow-xl"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 2, duration: 0.4 }}
       >
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-success-500/20 flex items-center justify-center">
-            <Calendar className="w-5 h-5 text-success-400" />
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-success-500/20 flex items-center justify-center">
+            <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-success-400" />
           </div>
           <div>
-            <p className="text-dark-100 text-sm font-medium">Appointment Booked</p>
-            <p className="text-dark-400 text-xs">Tomorrow at 2:00 PM</p>
+            <p className="text-dark-100 text-xs sm:text-sm font-medium">Appointment Booked</p>
+            <p className="text-dark-400 text-[10px] sm:text-xs">Tomorrow at 2:00 PM</p>
           </div>
         </div>
       </motion.div>
 
       <motion.div
-        className="absolute right-8 bottom-16 glass-card p-3 shadow-xl"
+        className="hidden sm:block absolute right-4 sm:right-6 lg:right-8 bottom-12 sm:bottom-16 glass-card p-2 sm:p-3 shadow-xl"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2.5, duration: 0.4 }}
       >
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center">
-            <Bell className="w-5 h-5 text-purple-400" />
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-purple-500/20 flex items-center justify-center">
+            <Bell className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400" />
           </div>
           <div>
-            <p className="text-dark-100 text-sm font-medium">SMS Sent to You</p>
-            <p className="text-dark-400 text-xs">Patient details delivered</p>
+            <p className="text-dark-100 text-xs sm:text-sm font-medium">SMS Sent to You</p>
+            <p className="text-dark-400 text-[10px] sm:text-xs">Patient details delivered</p>
           </div>
         </div>
       </motion.div>
