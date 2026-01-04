@@ -50,7 +50,7 @@ export default function HeroSection() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Button size="lg" href="#pricing">
+              <Button size="lg" href="https://dentist-saasapp.vercel.app/register">
                 Start 14-Day Free Trial
                 <ArrowRight className="w-5 h-5" />
               </Button>

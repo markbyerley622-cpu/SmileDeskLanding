@@ -78,13 +78,12 @@ export default function Navbar() {
             {/* Desktop CTA */}
             <div className="hidden md:flex items-center gap-4">
               <a
-                href="#pricing"
-                onClick={(e) => scrollToSection(e, '#pricing')}
+                href="https://dentist-saasapp.vercel.app/login"
                 className="text-dark-300 hover:text-dark-100 transition-colors text-sm font-medium"
               >
-                Sign Up
+                Sign In
               </a>
-              <Button size="sm" href="#pricing">
+              <Button size="sm" href="https://dentist-saasapp.vercel.app/register">
                 Start Free Trial
               </Button>
             </div>
@@ -139,13 +138,12 @@ export default function Navbar() {
                 ))}
                 <hr className="border-dark-700 my-2" />
                 <a
-                  href="#pricing"
-                  onClick={(e) => scrollToSection(e, '#pricing')}
+                  href="https://dentist-saasapp.vercel.app/login"
                   className="text-dark-200 hover:text-dark-100 transition-colors text-lg font-medium py-2"
                 >
-                  Sign Up
+                  Sign In
                 </a>
-                <Button className="w-full mt-2" href="#pricing">
+                <Button className="w-full mt-2" href="https://dentist-saasapp.vercel.app/register">
                   Start Free Trial
                 </Button>
               </div>

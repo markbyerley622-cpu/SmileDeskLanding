@@ -94,7 +94,7 @@ export default function PricingSection() {
               </div>
 
               {/* CTA */}
-              <Button className="w-full" size="lg" href="#signup">
+              <Button className="w-full" size="lg" href="https://dentist-saasapp.vercel.app/register">
                 Start 14-Day Free Trial
                 <ArrowRight className="w-5 h-5" />
               </Button>

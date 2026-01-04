@@ -60,7 +60,7 @@ export default function CTASection() {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <Button size="lg" className="text-lg px-10 py-5" href="#pricing">
+            <Button size="lg" className="text-lg px-10 py-5" href="https://dentist-saasapp.vercel.app/register">
               Start Your 14-Day Free Trial
               <ArrowRight className="w-5 h-5" />
             </Button>
