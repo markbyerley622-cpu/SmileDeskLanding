@@ -44,19 +44,15 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-6">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-9 h-9">
-                <defs>
-                  <linearGradient id="footerLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#3b82f6', stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: '#8b5cf6', stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <rect width="32" height="32" rx="8" fill="url(#footerLogoGrad)"/>
-                <path d="M16 8l3 3-3 3-3-3 3-3zm0 6l3 3-3 3-3-3 3-3zm0 6l3 3-3 3-3-3 3-3z" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <circle cx="16" cy="11" r="1.5" fill="white"/>
-                <circle cx="16" cy="17" r="1.5" fill="white"/>
-                <circle cx="16" cy="23" r="1.5" fill="white" opacity="0.7"/>
-              </svg>
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-accent-500 to-purple-600 flex items-center justify-center shadow-lg shadow-accent-500/30">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                  <path d="M5 3v4"></path>
+                  <path d="M19 17v4"></path>
+                  <path d="M3 5h4"></path>
+                  <path d="M17 19h4"></path>
+                </svg>
+              </div>
               <span className="text-xl font-bold text-dark-100">SmileDesk</span>
             </a>
             <p className="text-dark-400 mb-6 max-w-sm">
