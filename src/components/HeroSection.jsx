@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Play, Phone, MessageSquare, Calendar, Bell, Check, ArrowRight } from 'lucide-react'
 import Button from './ui/Button'
+import DemoBookingModal from './DemoBookingModal'
 
 const trustBadges = [
   'No credit card required',
@@ -9,6 +11,8 @@ const trustBadges = [
 ]
 
 export default function HeroSection() {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
+
   return (
     <section className="relative min-h-screen flex items-center pt-20 hero-bg overflow-hidden">
       {/* Background Elements */}
@@ -54,9 +58,9 @@ export default function HeroSection() {
                 Start 14-Day Free Trial
                 <ArrowRight className="w-5 h-5" />
               </Button>
-              <Button variant="outline" size="lg" href="#how-it-works">
-                <Play className="w-5 h-5" />
-                Watch Demo
+              <Button variant="outline" size="lg" onClick={() => setIsDemoModalOpen(true)}>
+                <Calendar className="w-5 h-5" />
+                Book 5-Min Demo
               </Button>
             </div>
 
@@ -88,6 +92,12 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </div>
+
+      {/* Demo Booking Modal */}
+      <DemoBookingModal
+        isOpen={isDemoModalOpen}
+        onClose={() => setIsDemoModalOpen(false)}
+      />
     </section>
   )
 }
