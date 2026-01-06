@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, Calendar, Loader2 } from 'lucide-react'
 import Button from './ui/Button'
+import { supabase } from '../lib/supabase'
 
 export default function DemoBookingModal({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
@@ -19,18 +20,35 @@ export default function DemoBookingModal({ isOpen, onClose }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    console.log('Form submitted, supabase client:', supabase ? 'exists' : 'NULL')
     setIsSubmitting(true)
 
-    // TODO: Add your Supabase insert here
-    // Example:
-    // const { data, error } = await supabase
-    //   .from('demo_requests')
-    //   .insert([formData])
+    if (!supabase) {
+      console.error('Supabase client not initialized - check env vars')
+      alert('Configuration error. Please contact support.')
+      setIsSubmitting(false)
+      return
+    }
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    const { data, error } = await supabase
+      .from('demo_requests')
+      .insert([{
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        practice_name: formData.practiceName
+      }])
+      .select()
 
+    console.log('Supabase response:', { data, error })
     setIsSubmitting(false)
+
+    if (error) {
+      console.error('Error submitting demo request:', error)
+      alert('Something went wrong. Please try again.')
+      return
+    }
+
     setIsSubmitted(true)
   }
 
