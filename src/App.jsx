@@ -6,7 +6,6 @@ import HowItWorksSection from './components/HowItWorksSection'
 import FeaturesSection from './components/FeaturesSection'
 import DashboardPreview from './components/DashboardPreview'
 import PricingSection from './components/PricingSection'
-import TestimonialsSection from './components/TestimonialsSection'
 import FAQSection from './components/FAQSection'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
@@ -57,9 +56,6 @@ export default function App() {
 
         {/* Pricing - Make decision easy */}
         <PricingSection />
-
-        {/* Testimonials - Social proof */}
-        <TestimonialsSection />
 
         {/* FAQ - Handle objections */}
         <FAQSection />
