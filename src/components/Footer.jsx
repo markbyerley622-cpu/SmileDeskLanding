@@ -11,7 +11,7 @@ const footerLinks = {
     { name: 'About', href: '#' },
     { name: 'Blog', href: '#' },
     { name: 'Careers', href: '#' },
-    { name: 'Contact', href: 'mailto:hello@smiledesk.ai' },
+    { name: 'Contact', href: 'mailto:teamsmiledesk@gmail.com' },
   ],
   legal: [
     { name: 'Privacy Policy', href: '#' },
@@ -56,7 +56,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-dark-100">SmileDesk</span>
             </a>
             <p className="text-dark-400 mb-6 max-w-sm">
-              AI-powered SMS automation for dental practices. Never miss a patient call again.
+              Instant SMS automation for dental practices. Missed call recovery.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (

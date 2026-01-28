@@ -13,8 +13,8 @@ const steps = [
   {
     number: '02',
     icon: Bot,
-    title: 'AI Texts Them Back',
-    description: 'Our AI immediately sends a personalized SMS, asking for their name, reason for calling, and preferred appointment times.',
+    title: 'Instant SMS Reply',
+    description: 'SmileDesk immediately sends a personalized SMS, asking for their name, reason for calling, and preferred appointment times.',
     color: 'purple',
   },
   {
@@ -133,7 +133,7 @@ export default function HowItWorksSection() {
                 <ArrowRight className="w-8 h-8 text-accent-500" />
               </div>
 
-              {/* AI Texts */}
+              {/* SMS Reply */}
               <div className="text-center">
                 <div className="w-16 h-16 rounded-2xl bg-accent-500/20 mx-auto mb-4 flex items-center justify-center">
                   <Bot className="w-8 h-8 text-accent-400" />

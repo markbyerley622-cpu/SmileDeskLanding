@@ -4,7 +4,7 @@ import { Check, Sparkles, ArrowRight } from 'lucide-react'
 import Button from './ui/Button'
 
 const features = [
-  'Unlimited AI SMS responses',
+  'Unlimited automated SMS responses',
   'Instant notifications',
   'Google Calendar integration',
   'Full conversation history',

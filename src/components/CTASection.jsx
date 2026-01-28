@@ -70,10 +70,10 @@ export default function CTASection() {
           <p className="text-dark-500 mt-8">
             Questions? Email us at{' '}
             <a
-              href="mailto:hello@smiledesk.ai"
+              href="mailto:teamsmiledesk@gmail.com"
               className="text-accent-400 hover:text-accent-300 transition-colors"
             >
-              hello@smiledesk.ai
+              teamsmiledesk@gmail.com
             </a>
           </p>
         </motion.div>

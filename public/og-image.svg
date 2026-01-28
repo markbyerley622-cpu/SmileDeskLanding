@@ -27,5 +27,5 @@
 
   <!-- Text -->
   <text x="600" y="400" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="56" font-weight="700" fill="white">SmileDesk</text>
-  <text x="600" y="460" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="24" fill="#9ca3af">Never Miss a Patient Call Again</text>
+  <text x="600" y="460" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="24" fill="#9ca3af">Missed Call Recovery</text>
 </svg>

@@ -37,14 +37,13 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-500/10 border border-accent-500/20 mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-accent-400 animate-pulse" />
-              <span className="text-accent-400 text-sm font-medium">AI-Powered SMS Automation</span>
+              <span className="text-accent-400 text-sm font-medium">Instant SMS Automation</span>
             </motion.div>
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-100 leading-tight mb-6">
-              Never Miss a{' '}
-              <span className="text-gradient">Patient Call</span>{' '}
-              Again
+              <span className="text-gradient">Missed Call</span>{' '}
+              Recovery
             </h1>
 
             {/* Subheadline */}

@@ -8,16 +8,16 @@ const faqs = [
     answer: "SmileDesk integrates with your phone system to detect when calls go unanswered. When a patient calls and you can't pick up, our system automatically triggers an SMS to that caller within seconds. No call forwarding needed — it works with your existing setup."
   },
   {
-    question: "What does the AI text message say?",
-    answer: "The AI sends a friendly, personalized message from your practice. It introduces itself, apologizes for missing the call, and asks how it can help. The conversation flows naturally via text — patients can share their name, reason for calling, and preferred appointment times."
+    question: "What does the automated text message say?",
+    answer: "SmileDesk sends a friendly, personalized message from your practice. It introduces itself, apologizes for missing the call, and asks how it can help. The conversation flows naturally via text — patients can share their name, reason for calling, and preferred appointment times."
   },
   {
     question: "What if someone has an emergency?",
-    answer: "Our AI is trained to recognize dental emergencies and urgent situations. It will immediately direct patients to call 911 for medical emergencies, or provide your emergency contact number for after-hours dental emergencies. You can customize these protocols to match your practice's needs."
+    answer: "Our system is designed to recognize dental emergencies and urgent situations. It will immediately direct patients to call 911 for medical emergencies, or provide your emergency contact number for after-hours dental emergencies. You can customize these protocols to match your practice's needs."
   },
   {
     question: "Can I customize the messages?",
-    answer: "Absolutely! You can personalize every message with your practice name, tone, and specific instructions. You can also customize the questions the AI asks, the information it collects, and how it responds to different situations. We'll help you set it up during onboarding."
+    answer: "Absolutely! You can personalize every message with your practice name, tone, and specific instructions. You can also customize the questions SmileDesk asks, the information it collects, and how it responds to different situations. We'll help you set it up during onboarding."
   },
   {
     question: "How fast do I get notified?",
@@ -75,10 +75,10 @@ export default function FAQSection() {
           <p className="text-dark-400">
             Still have questions?{' '}
             <a
-              href="mailto:hello@smiledesk.ai"
+              href="mailto:teamsmiledesk@gmail.com"
               className="text-accent-400 hover:text-accent-300 transition-colors"
             >
-              Email us at hello@smiledesk.ai
+              Email us at teamsmiledesk@gmail.com
             </a>
           </p>
         </motion.div>

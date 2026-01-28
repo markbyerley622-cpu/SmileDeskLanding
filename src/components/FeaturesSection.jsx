@@ -14,7 +14,7 @@ const features = [
   {
     icon: Bot,
     title: 'Smart SMS Response',
-    description: 'AI-powered text conversations that feel personal and human. Patients get instant engagement.',
+    description: 'Automated text conversations that feel personal and human. Patients get instant engagement.',
   },
   {
     icon: BellRing,
